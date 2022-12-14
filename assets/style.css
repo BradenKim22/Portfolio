@@ -1,0 +1,42 @@
+/* Make a colors section variable thing to change only here. */
+
+/* not exactly sure why but copied from challenge 1 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+}
+
+/* This changes the header color and floats */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: black;
+    font-family: ; /* Fill in */
+    color: white; /* Change Later */
+}
+
+header h1 {
+    font-size: 225%;
+}
+
+header nav {
+    font-size: 150%;
+}
+
+/* Changes the color and decoration of the nav link */
+nav a {
+    padding: 5px; /* Change to percentage later */
+    color: white;
+    text-decoration: none;
+}
+
+/* hover works */
+nav a:hover {
+    color: aqua;
+}
