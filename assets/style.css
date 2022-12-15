@@ -1,4 +1,4 @@
-/* not exactly sure why but copied from challenge 1 */
+/* not exactly sure why but copied part from challenge 1 (Margin - Fills in the edge of the page) */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -13,11 +13,18 @@
     --light:#BDE038; /* Actions */
 }
 
+/* Background color */
 body {
     background-color: var(--tetriary);
 }
 
-/* This changes the header color and floats */
+/* Off Set Default ?
+h1, h2, h3 {
+    margin: 0;
+}
+*/
+
+/* This changes the header color and position */
 header {
     display: flex;
     align-items: center;
@@ -28,11 +35,11 @@ header {
     font-family: ; /* Fill in */
     color: var(--secondlight); /* Text */
 }
-
+/* My Name Font Size */
 header h1 {
     font-size: 225%;
 }
-
+/* Navagation Font Size */
 header nav {
     font-size: 150%;
 }
@@ -55,30 +62,128 @@ nav a:hover {
     margin: auto;
     width: 15%;
     height: 15%;
+/* Can I add a shade over my image? */
 }
 
-
-/* Main Section */
+/*  */
+/*  */
+/* Main Section Holds all Three Pages Together (About Me, Work, Contact) */
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 2%; /* Creates a padding around the whole content under neath sotto-header(no footer) */
+    justify-items: space-between;
 }
 
+/* Three Page's (title and content) of About Me, Work, and Contact Info */
 .page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content:space-between;
+    padding: 2%;
 }
 
+/* Changes the column on the left with page titles and size of content "box" */
+.page h2 {
+    flex: 0 0 12%;
+    text-align: right;
+    padding-right: 2%;
+    border-right: 3px solid black;
+}
+
+/* Changes the column on the right with page content and size of content "box" */
+.page div {
+    flex: 0 0 80%;
+}
+
+/* Contains all the Projects in the Work Page Coordinate with contact info in Contact page */
 .flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
 }
 
+/* Make the boxes for the Projects */
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    padding: 2%;
+    border: 5px solid black;
+    margin: 1%;
+    width: 31%;
+    height: 30vh;
+}
+
+/* Makes the Project 1 (bigger project box) */
+.flex-box-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    padding: 2%;
+    border: 5px solid black;
+    margin: 1%;
+    width: 65%;
+    height: 30vh;
+}
+
+/* Holds the Project Title and Subtitle */
 .flex-box div {
     display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 20%;
+    height: 20%;
+}
+
+/* Holds the Project 1 (bigger project box) Title and Subtitle */
+.flex-box-1 div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 20%;
+    height: 20%;
+}
+
+/* Email, GitHub, Linked centered vertically. */
+#contactinfo {
+    align-items: center;
+}
+
+
+/* Creates the Contact Page Title back to top of flex */
+#contactinfo h2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Contains the Contact info inside the contacts page Coordinate with Projects in working page*/
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* So far it gets rid of the bullet point.. */
+.contact-list li {
+    display: flex;
+}
+
+/* Text decoration of the Contact List */
+.contact-list li a {
+    padding: 5px;
+    margin: 5%;
+    text-decoration: none;
+    color: var(); /* Fill this in with the Main Text not Header Text */
 }
