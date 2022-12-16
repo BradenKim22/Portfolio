@@ -243,7 +243,7 @@ nav a:hover {
         flex: 0 0 75%;
     }
     .flex-container {
-        height: ;
+        height: fit-content;
     }
     .flex-box-1 {
         width: 99%;
