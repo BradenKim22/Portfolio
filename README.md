@@ -2,7 +2,7 @@
 
 ## Description
 
-<Paragraph>
+People may find this website helpful to check my work background in web developement. You will find my top projects, contact info, and a little bit of information about me here.
 
 ## User Story
 
