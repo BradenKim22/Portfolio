@@ -263,26 +263,49 @@ nav a:hover {
     .sotto-header {
         display: flex;
         justify-content: center;
+        background-size: 150%;
     }
     .Profile {
         width: 250px;
-        height: ;
+    }
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .page h2 {
-        flex: 0 0 20%;
+        flex: auto;
+        padding-right: 0;
+        border-right: 0;
     }
     .page div {
-        flex: 0 0 75%;
+        flex: auto;
     }
     .flex-container {
-        height: ;
+        height: fit-content;
+        justify-content: center;
+    }
+    .flex-box-1, .flex-boxs {
+        width: 300px;
+        height: 270px;
+        margin: 8px;
+        padding: 0;
     }
     .flex-box-1 {
-        width: 99%;
-        height: 32.5%;
+        background-size: 140%;
     }
-    .flex-boxs {
-        width: 49%;
-        height: 32.5%;
+    .flex-box-1 div, .flex-boxs div {
+        border-radius: 0 0 0 0;
+        border: 0;
+        margin-bottom: 10px;
+    }
+    #contactinfo {
+        display: flex;
+        width: 100%;
+    }
+    .contact-list img {
+        margin: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
