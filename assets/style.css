@@ -6,11 +6,16 @@
 }
 
 :root {
-    --primary:#10454F; /* Header */
-    --secondary:#506266; /* Border */
+    --primary:#10454F; /* Header and Borders */
+    --secondary:#506266; /* Body Text? */
     --tetriary:#818274; /* Background */
-    --secondlight:#A3AB78; /* Text */
-    --light:#BDE038; /* Actions */
+    --secondlight:#A3AB78; /* Header Text */
+    --light:#BDE038; /* Actions Hover.. */
+
+    --border: 4px solid var(--primary); /* Project Boxes Border and side page border */
+    --insidebox: 3px solid var(--primary); /* Borders for inside box and profile pic */
+    --Edge: 3px; /* Make the edges of the main borders a tad bit round */
+    --Edge2: 0 5px 5px 0; /* Edge inside the project box */
 }
 
 /* Background color */
@@ -18,11 +23,6 @@ body {
     background-color: var(--tetriary);
 }
 
-/* Off Set Default ?
-h1, h2, h3 {
-    margin: 0;
-}
-*/
 
 /* This changes the header color and position */
 header {
@@ -51,27 +51,35 @@ nav a {
     text-decoration: none;
 }
 
-/* hover works */
+/* Hover Works */
 nav a:hover {
     color: var(--light);
 }
 
+/* Background Banner */
+.sotto-header {
+    height: 100%;
+    width: 100%;
+    padding: .5%;
+    background-image: url(/assets/images/portfolio-banner.png);
+    background-size: 100%;
+}
 
-/* Resize My Image */
-.sotto-header img {
-    margin: auto;
+/* Resize My Profile Image */
+.Profile {
     width: 15%;
     height: 15%;
+    border: 4px solid var(--primary);
+    border-radius: var(--Edge);
 /* Can I add a shade over my image? */
 }
 
-/*  */
-/*  */
+
 /* Main Section Holds all Three Pages Together (About Me, Work, Contact) */
 .content {
     display: flex;
     flex-direction: column;
-    padding: 2%; /* Creates a padding around the whole content under neath sotto-header(no footer) */
+    padding: 2%;
     justify-items: space-between;
 }
 
@@ -90,7 +98,7 @@ nav a:hover {
     flex: 0 0 12%;
     text-align: right;
     padding-right: 2%;
-    border-right: 3px solid black;
+    border-right: var(--border);
 }
 
 /* Changes the column on the right with page content and size of content "box" */
@@ -98,29 +106,20 @@ nav a:hover {
     flex: 0 0 80%;
 }
 
+
 /* Contains all the Projects in the Work Page Coordinate with contact info in Contact page */
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2%;
-    width: fit-content;
-    height: fit-content;
+    align-content: center;
+    height: 90vh;
 }
 
-/* Make the boxes for the Projects */
-.flex-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-    align-content: flex-end;
-    padding: 2%;
-    border: 5px solid black;
-    margin: 1%;
-    width: 31%;
-    height: 30vh;
+/* Decorate Text for Titles in the Box's */
+.flex-container a {
+    text-decoration: none;
 }
 
 /* Makes the Project 1 (bigger project box) */
@@ -130,42 +129,66 @@ nav a:hover {
     flex-wrap:wrap;
     justify-content: flex-start;
     align-content: flex-end;
-    padding: 2%;
-    border: 5px solid black;
-    margin: 1%;
-    width: 65%;
-    height: 30vh;
+    background-image: url(/assets/images/business-refactor.jpg);
+    background-size: 100%;
+    padding-bottom: .5%;
+    border: var(--border);
+    margin: .5%;
+    width: 65.5%;
+    height: 47.5%;
+    border-radius: var(--Edge);
 }
 
-/* Holds the Project Title and Subtitle */
-.flex-box div {
+/* Make the boxes for the Projects */
+.flex-boxs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    padding-bottom: .5%;
+    border: var(--border);
+    margin: .5%;
+    width: 32.25%;
+    height: 47.5%;
+    border-radius: var(--Edge);
+}
+
+/* Holds the all the Project's Title and Subtitle Box */
+.flex-box-1 div, .flex-boxs div {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    width: 20%;
-    height: 20%;
+    border: var(--insidebox);
+    background-color: var(--primary);
+    color: var(--secondlight);
+    border-radius: var(--Edge2);
+    /* width: 20%; */
+    /* height: 20%; */
 }
 
-/* Holds the Project 1 (bigger project box) Title and Subtitle */
-.flex-box-1 div {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    width: 20%;
-    height: 20%;
+/* Make a hover action over the boxes */
+.flex-box-1:hover, .flex-boxs:hover {
+    border: 3.5px solid var(--light)
 }
 
-/* Email, GitHub, Linked centered vertically. */
-#contactinfo {
-    align-items: center;
-}
+/* Make a hover action for the inside box when hovered over the outside project box */
+/* .flex-box-1:hover > div, .flex-boxs:hover > div {
+    border: 3px solid var(--light);
+} */
 
 
-/* Creates the Contact Page Title back to top of flex */
-#contactinfo h2 {
-    display: flex;
-    align-items: flex-start;
+/* Add Image to Project 2 */
+.prework {
+    background-image: url(/assets/images/prework-study-guide.jpg);
+    background-size: 135%;
 }
+
+/* Add Image to Placeholders */
+.place3, .place4, .place5 {
+    background-image: url(/assets/images/coming-soon.jpg);
+    background-size: 135%;
+}
+
 
 /* Contains the Contact info inside the contacts page Coordinate with Projects in working page*/
 .contact-list {
@@ -175,15 +198,8 @@ nav a:hover {
     justify-content: space-evenly;
 }
 
-/* So far it gets rid of the bullet point.. */
-.contact-list li {
-    display: flex;
-}
-
 /* Text decoration of the Contact List */
-.contact-list li a {
-    padding: 5px;
-    margin: 5%;
+.contact-list a {
     text-decoration: none;
-    color: var(); /* Fill this in with the Main Text not Header Text */
+    color: var(--); /* Fill this in with the Main Text not Header Text */
 }
