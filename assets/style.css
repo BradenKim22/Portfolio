@@ -64,7 +64,7 @@ nav a:hover {
     height: 100%;
     width: 100%;
     padding: .5%;
-    background-image: url(/assets/images/portfolio-banner.png);
+    background-image: url(./images/portfolio-banner.png);
     background-size: 100%;
 }
 
@@ -132,7 +132,7 @@ nav a:hover {
     flex-wrap:wrap;
     justify-content: flex-start;
     align-content: flex-end;
-    background-image: url(/assets/images/business-refactor.jpg);
+    background-image: url(./images/business-refactor.jpg);
     background-size: 100%;
     padding-bottom: .5%;
     border: var(--border);
@@ -185,13 +185,13 @@ nav a:hover {
 
 /* Add Image to Project 2 */
 .prework {
-    background-image: url(/assets/images/prework-study-guide.jpg);
+    background-image: url(./images/prework-study-guide.jpg);
     background-size: 135%;
 }
 
 /* Add Image to Placeholders */
 .place3, .place4, .place5 {
-    background-image: url(/assets/images/coming-soon.jpg);
+    background-image: url(./images/coming-soon.jpg);
     background-size: 135%;
 }
 
