@@ -16,11 +16,14 @@
     --insidebox: 3px solid var(--primary); /* Borders for inside box and profile pic */
     --Edge: 3px; /* Make the edges of the main borders a tad bit round */
     --Edge2: 0 5px 5px 0; /* Edge inside the project box */
+
+    --opa: 0.95; /* Sets the opacity of the images in each box without hover */
 }
 
 /* Background color */
 body {
     background-color: var(--tetriary);
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
 
 
@@ -32,7 +35,7 @@ header {
     flex-wrap: wrap;
     padding: 2%;
     background-color: var(--primary);
-    font-family: ; /* Fill in */
+    font-family:Georgia, 'Lucida Grande', 'Geneva', serif;
     color: var(--secondlight); /* Text */
 }
 /* My Name Font Size */
@@ -137,6 +140,7 @@ nav a:hover {
     width: 65.5%;
     height: 47.5%;
     border-radius: var(--Edge);
+    opacity: var(--opa);
 }
 
 /* Make the boxes for the Projects */
@@ -152,6 +156,7 @@ nav a:hover {
     width: 32.25%;
     height: 47.5%;
     border-radius: var(--Edge);
+    opacity: var(--opa);
 }
 
 /* Holds the all the Project's Title and Subtitle Box */
@@ -168,7 +173,8 @@ nav a:hover {
 
 /* Make a hover action over the boxes */
 .flex-box-1:hover, .flex-boxs:hover {
-    border: 3.5px solid var(--light)
+    border: 3.5px solid var(--light);
+    opacity: 1;
 }
 
 /* Make a hover action for the inside box when hovered over the outside project box */
@@ -200,6 +206,83 @@ nav a:hover {
 
 /* Text decoration of the Contact List */
 .contact-list a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: var(--); /* Fill this in with the Main Text not Header Text */
+    color: var(--primary);
+}
+
+/* Add Email Icon */
+.email {
+    width: 48px;
+    height: 31.39px;
+}
+
+/* Add GitHub Icon */
+.github {
+    width: 48px;
+    height: 46.82px;
+}
+
+/* Add LinkedIn Icon */
+.linkedin {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Profile {
+        width: 22%;
+        height: 22%
+    }
+    .page h2 {
+        flex: 0 0 20%;
+    }
+    .page div {
+        flex: 0 0 75%;
+    }
+    .flex-container {
+        height: ;
+    }
+    .flex-box-1 {
+        width: 99%;
+        height: 32.5%;
+    }
+    .flex-boxs {
+        width: 49%;
+        height: 32.5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .sotto-header {
+        display: flex;
+        justify-content: center;
+    }
+    .Profile {
+        width: 250px;
+        height: ;
+    }
+    .page h2 {
+        flex: 0 0 20%;
+    }
+    .page div {
+        flex: 0 0 75%;
+    }
+    .flex-container {
+        height: ;
+    }
+    .flex-box-1 {
+        width: 99%;
+        height: 32.5%;
+    }
+    .flex-boxs {
+        width: 49%;
+        height: 32.5%;
+    }
 }
