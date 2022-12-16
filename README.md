@@ -32,7 +32,7 @@ N/A
 
 ## Usage
 
-<Paragraph>
+This website is for anyone who wants to see my work. Also for me to share my work with others on web developement.
 
 ## Credits
 
