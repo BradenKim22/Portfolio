@@ -40,7 +40,7 @@ N/A
 
 ## Deployment
 
-Follow the link for the application <Link>
+Follow the link for the application https://bradenkim22.github.io/Portfolio/
 
 ## License
 
