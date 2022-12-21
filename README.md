@@ -32,7 +32,7 @@ N/A
 
 ## Usage
 
-<Paragraph>
+This website is for anyone who wants to see my work. Also for me to share my work with others on web developement.
 
 ## Credits
 
@@ -40,8 +40,12 @@ N/A
 
 ## Deployment
 
-Follow the link for the application <Link>
+Follow the link for the application https://bradenkim22.github.io/Portfolio/
 
 ## License
 
 Please refer to the LICENSE in the repo.
+
+## MockUp
+
+![]()
