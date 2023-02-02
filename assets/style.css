@@ -17,7 +17,7 @@
     --Edge: 3px; /* Make the edges of the main borders a tad bit round */
     --Edge2: 0 5px 5px 0; /* Edge inside the project box */
 
-    --opa: 0.95; /* Sets the opacity of the images in each box without hover */
+    --opa: 0.70; /* Sets the opacity of the images in each box without hover */
 }
 
 /* Background color */
@@ -132,8 +132,8 @@ nav a:hover {
     flex-wrap:wrap;
     justify-content: flex-start;
     align-content: flex-end;
-    background-image: url(./images/business-refactor.jpg);
-    background-size: 100%;
+    background-image: url(./images/project1.jpg);
+    background-size: 115%;
     padding-bottom: .5%;
     border: var(--border);
     margin: .5%;
@@ -183,20 +183,25 @@ nav a:hover {
 } */
 
 /* Add Image to Project Password */
-.password {
-    background-image: url(./images/password-gen.png);
+.place2 {
+    background-image: url(./images/multiple-guess1.png);
     background-size: 130%;
 }
 
 /* Add Image to Project Prework */
-.prework {
-    background-image: url(./images/prework-study-guide.jpg);
+.place3 {
+    background-image: url(./images/time-block.jpg);
     background-size: 135%;
 }
 
 /* Add Image to Placeholders */
-.place4, .place5 {
-    background-image: url(./images/coming-soon.jpg);
+.place4 {
+    background-image: url(./images/password-gen.png);
+    background-size: 135%;
+}
+
+.place5 {
+    background-image: url(./images/business-refactor.jpg);
     background-size: 135%;
 }
 
